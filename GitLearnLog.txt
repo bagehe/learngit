@@ -29,7 +29,16 @@
         $ git reset --hard HEAD~100 回退到前100个版本
         $ git reset --hard commitid 回退到指定commitid的版本
         ps  --hard参数有啥意义？
-        
     3.5查看所有操作记录历史
         $ git reflog
+
+4.工作区版本库和暂存区概念
+    工作区:    用户修改和编辑
+    暂存区:    git add    把工作区的修改保存到暂存区
+    版本库:    git commit 把暂存区的修改保存到版本库
+    git diff            实际上是工作区和暂存区的比较
+    git diff --cached   暂存区和版本库的比较
+    git diff HEAD --    查看工作区和版本库里面最新版本
+5.
+    
 
