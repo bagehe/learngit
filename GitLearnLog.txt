@@ -15,9 +15,21 @@
 
 3.时光机穿梭
     3.1查看仓库状态
-        git status          查看当前目录改动
-        git status filename 查看指定目录或者文件改动
-
+        $ git status          查看当前目录改动
+        $ git status filename 查看指定目录或者文件改动
     3.2查看difference
-        git diff
-        git diff filename
+        $ git diff            查看当前目录diff
+        $ git diff filename   查看指定目录或者文件diff
+    3.3查看历史
+        $ git log
+        $ git log --pretty=oneline  
+    3.4回退版本
+        $ git reset --hard HEAD^    回退到前一个版本     
+        $ git reset --hard HEAD^^   回退到前两个版本
+        $ git reset --hard HEAD~100 回退到前100个版本
+        $ git reset --hard commitid 回退到指定commitid的版本
+        ps  --hard参数有啥意义？
+        
+    3.5查看所有操作记录历史
+        $ git reflog
+
