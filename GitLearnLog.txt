@@ -39,6 +39,12 @@
     git diff            实际上是工作区和暂存区的比较
     git diff --cached   暂存区和版本库的比较
     git diff HEAD --    查看工作区和版本库里面最新版本
-5.
-    
+5. 撤销工作区的修改
+    5.1还未git add到暂存区
+        git checkout -- readme.txt      回退工作区的readme.txt到暂存区版本
+    5.2已经git add 但是还未git commit
+        先 git reset HEAD -- readme.txt  回退暂存区的readme.txt到HEAD版本 
+        再 git checkout -- readme.txt    回退工作区的readme.txt到暂存区版本 (同5.1)
+    5.3直接checkout版本库到工作区
+        git check HEAD^ -- readme.txt    回退工作区的readme.txt到版本库的指定版本
 
