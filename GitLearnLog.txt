@@ -1,0 +1,23 @@
+1.设置用户名
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "email@example.com"
+    ps  git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+
+2.创建版本库
+    2.0创建仓库
+        $ mkdir learngit
+        $ cd learngit
+        $ git init
+    2.1添加文件到仓库
+        $ git add readme.txt
+    2.2提交文件到仓库
+        $ git commit -m "wrote a readme file"
+
+3.时光机穿梭
+    3.1查看仓库状态
+        git status          查看当前目录改动
+        git status filename 查看指定目录或者文件改动
+
+    3.2查看difference
+        git diff
+        git diff filename
