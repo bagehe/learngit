@@ -83,4 +83,15 @@
     8.9推送分支到远程仓库
         $ git push origin master
         $ git push origin dev
+    8.10拉取远程仓库到本地
+        $ git pull
+    8.11绑定本地分支和远程分支
+        $ git branch --set-upstream dev origin/dev
+    8.12保存当前工作现场
+        $ git stash
+        $ git stash apply 恢复工作现场 不删除stash
+        $ git stash drop  删除stash
+        $ git stash pop   恢复工作现场 同时删除stash
+
+9.标签管理
     
