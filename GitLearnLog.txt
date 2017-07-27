@@ -77,8 +77,10 @@
         $ git branch -D <name>  删除未被merge的分支
     8.7查看合并分支图
         $ git log --graph
-
-    8.8推送分支到远程仓库
+    8.8查看远程仓库信息
+        $ git remote        查看远程仓库名
+        $ git remote -v     详细信息 查看远程仓库抓取和推送的地址
+    8.9推送分支到远程仓库
         $ git push origin master
         $ git push origin dev
-        
+    
