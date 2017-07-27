@@ -23,6 +23,7 @@
     3.3查看历史
         $ git log
         $ git log --pretty=oneline  
+        $ git log --graph 可以查看到分支图
     3.4回退版本
         $ git reset --hard HEAD^    回退到前一个版本     
         $ git reset --hard HEAD^^   回退到前两个版本
@@ -72,6 +73,12 @@
     8.5合并某分支到当前分支
         $ git merge <name>
     8.6删除分支
-        $ git branch -d <name>
+        $ git branch -d <name>  删除已被merge的分支
+        $ git branch -D <name>  删除未被merge的分支
+    8.7查看合并分支图
+        $ git log --graph
 
-
+    8.8推送分支到远程仓库
+        $ git push origin master
+        $ git push origin dev
+        
